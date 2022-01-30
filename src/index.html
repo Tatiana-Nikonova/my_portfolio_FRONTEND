@@ -59,34 +59,7 @@
 
 			
 				
-				<script>
-				function printText( el ){
 				
-					let letterTimeout = 100
-				
-					let text = el.innerHTML
-					let i = 1
-				
-					let print__fn = function(){
-				
-							if( i <= text.length ){
-								el.innerHTML = text.substr( 0, i );
-								setTimeout( arguments.callee, letterTimeout );
-							}
-				
-							i++;
-						}
-				
-					print__fn() // init
-				};
-				
-				// init
-				let elements = document.getElementsByClassName( 'my-text' )
-				let elemArray = Array.from(elements);
-				elemArray.forEach((item) => printText(item));
-				
-				
-				</script>
 		</aside>
 
 		<div class="empty-block"></div>
