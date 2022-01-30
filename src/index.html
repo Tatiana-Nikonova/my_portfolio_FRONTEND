@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+
+
+	<link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="stylesheet" href="css/@tablet.css" media="(min-width:641px) and (max-width:1199px">
+	<link rel="stylesheet" href="css/@desk.css" media="(min-width:1200px)"> -->
+
+
+
+	<title>Портфолио Татьяны Никоновой</title>
+
+</head>
+
+<body>
+	<div class="wrap">
+		
+		<header class="header">
+			<p class="slogan my-text">Золотой фронтенд</p>
+			<div class="menu-burger">
+				<span></span>
+			</div>
+			<nav class="nav header__menu">
+				
+			</nav>
+			<div class="logo">
+				<img src="images/logo-3.png" alt="">
+			</div>
+			
+		</header>
+		<div class="video">
+			<video id="myVideo" class="video_media" src="video/Code - 37106.mp4" preload autoplay muted></video>
+		</div>
+
+		<aside class="aside">
+			<div class="performers">
+				<div class="disk" class="performer performer-1">
+					<img class="disk" src="images/ava1.jpg" alt="">
+					<b>Т</b>
+					<b>а</b>
+					<b>т</b>
+					<b>ь</b>
+					<b>я</b>
+					<b>н</b>
+					<b>а</b>
+
+				</div>				
+			</div>
+
+			<div class="about-me my-text">
+				<p>Здравствуйте.</p>
+				<p>Я рада, что Вы заглянули на мой сайт. Пожалуйста, ознакомьтесь с моими работами.</p>
+			</div>
+
+			
+				
+				<script>
+				function printText( el ){
+				
+					let letterTimeout = 100
+				
+					let text = el.innerHTML
+					let i = 1
+				
+					let print__fn = function(){
+				
+							if( i <= text.length ){
+								el.innerHTML = text.substr( 0, i );
+								setTimeout( arguments.callee, letterTimeout );
+							}
+				
+							i++;
+						}
+				
+					print__fn() // init
+				};
+				
+				// init
+				let elements = document.getElementsByClassName( 'my-text' )
+				let elemArray = Array.from(elements);
+				elemArray.forEach((item) => printText(item));
+				
+				
+				</script>
+		</aside>
+
+		<div class="empty-block"></div>
+
+		<main class="main">
+			<div class="slider-container">
+				<h2 class="slider__title">Портфолио</h2>
+				<div class="slider">
+					<div class="slider__item">
+						<img class="slider-images" src="images/banner-sea.jpg" alt="">
+					</div>
+
+					<div class="slider__item">
+					</div>
+
+					<div class="slider__item">
+					</div>
+
+					<div class="slider__item">
+					</div>
+
+					<div class="slider__item">
+					</div>
+
+					<div class="slider__item">
+					</div>
+
+
+				</div>
+			</div>
+		</main>
+
+
+	</div>
+
+
+
+	<!--<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>-->
+
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/script.js"></script>
+	
+
+
+
+</body>
+
+</html>
