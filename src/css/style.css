@@ -7,6 +7,9 @@
 	font-weight: normal;
 	font-style: normal;
 }
+body {
+	background-color: #000;
+}
 
 .wrap {
 	width: 100%;
@@ -34,7 +37,7 @@
 }
 .logo {
 	opacity: 0;
-	animation: header 1.5s ease 1 normal 2s forwards;	
+	animation: header 1.5s ease 1 normal 1s forwards;	
 }
 .slogan {
 	color:rgb(211, 193, 35);
@@ -148,7 +151,7 @@
 	padding: 0 20px;
 	z-index: 5;
 	opacity: 0;
-	animation: avatar 1.5s ease 1 normal 4s forwards;
+	animation: avatar 1.5s ease 1 normal 2s forwards;
 }
 .aside::after {
 	content: "";

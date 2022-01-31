@@ -42,7 +42,7 @@ $(document).ready(function() {
 //  Печатный текст
 function printText( el ){
 
-	let letterTimeout = 100
+	let letterTimeout = 70
 
 	let text = el.innerHTML
 	let i = 1
